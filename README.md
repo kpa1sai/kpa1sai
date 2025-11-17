@@ -62,6 +62,6 @@ I am currently deepening my expertise in **Artificial Intelligence** , with a fo
 I'm always open to connecting with fellow engineers and exploring new opportunities.
 
 
-[[LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR-LINKEDIN-URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR-LINKEDIN-URL)
 &nbsp;
-[[Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Korlapatipavansai@Gmail.Com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Korlapatipavansai@Gmail.Com)
