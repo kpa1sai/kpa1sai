@@ -1,6 +1,6 @@
 ### Hi there, I'm Pavan!👋 
 
-I'm a Senior Software Engineer [cite: 6] with a passion for architecting and building high-availability, cloud-native systems. [cite_start]With 5 years of hands-on experience [cite: 6][cite_start], I specialize in engineering resilient microservices [cite: 11][cite_start], optimizing application performance, and integrating AI-driven solutions [cite: 17] to solve complex, real-world problems.
+I'm a Senior Software Engineer with a passion for architecting and building high-availability, cloud-native systems. With 5 years of hands-on experience, I specialize in engineering resilient microservices , optimizing application performance, and integrating AI-driven solutions to solve complex, real-world problems.
 
 My core focus is on creating software that is not just functional, but also scalable, efficient, and maintainable.
 
