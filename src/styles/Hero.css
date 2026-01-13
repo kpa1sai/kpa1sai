@@ -1,0 +1,97 @@
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+    /* Ensure it's above the 3D background if we use one */
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 50%;
+    z-index: 2;
+}
+
+.hero-profile-container {
+    margin-bottom: 2rem;
+}
+
+.hero-headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 0 20px rgba(100, 108, 255, 0.3);
+}
+
+.hero-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-intro h3 {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    min-height: 2em;
+    /* Reserve space for typing */
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: var(--accent-color);
+    margin-left: 5px;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 5% 5%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero-right {
+        margin-top: 3rem;
+    }
+
+    .hero-intro h1 {
+        font-size: 2.2rem;
+    }
+}
