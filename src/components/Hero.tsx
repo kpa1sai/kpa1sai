@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 0.8 }}
             >
                 <div className="hero-profile-container">
-                    <img src="/headshot.png" alt="Pavan" className="hero-headshot" />
+                    <img src="/headshot.jpeg" alt="Pavan" className="hero-headshot" />
                 </div>
                 <div className="hero-intro">
                     {/* <h3>Hi there, I'm</h3> */}
