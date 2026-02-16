@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import ThreeBackground from './components/ThreeBackground';
 import TechStack from './components/TechStack';
 import About from './components/About';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import './styles/global.css';
 
@@ -21,6 +22,7 @@ function App() {
       <ThreeBackground />
       <Hero />
       <About />
+      <Experience />
       <TechStack />
       <Contact />
     </div>

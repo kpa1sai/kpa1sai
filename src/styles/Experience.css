@@ -1,0 +1,244 @@
+.experience-section {
+    padding: 8rem 10%;
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.experience-title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: var(--text-primary);
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+/* Timeline Core */
+.experience-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            transparent,
+            var(--accent-color) 15%,
+            var(--accent-color) 85%,
+            transparent);
+    opacity: 0.3;
+}
+
+.timeline-pulse {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 40px;
+    background: var(--accent-color);
+    box-shadow: 0 0 20px var(--accent-color);
+    border-radius: 2px;
+    top: 0;
+    z-index: 1;
+}
+
+/* Experience Cards */
+.experience-item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.experience-card {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.2);
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* Card Positioning */
+.experience-item-wrapper:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.experience-item-wrapper:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: #0a0a0a;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Header Content */
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+.company-logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-info {
+    flex-grow: 1;
+}
+
+.experience-role {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin: 0.3rem 0;
+}
+
+.experience-duration {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-top: 0.2rem;
+}
+
+/* Expand Content */
+.accomplishments-list {
+    margin-top: 2rem;
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.5rem;
+    list-style: none;
+}
+
+.accomplishment-item {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.accomplishment-item::before {
+    content: "→";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.expand-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--text-secondary);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.experience-card.expanded .expand-icon {
+    transform: rotate(180deg);
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+/* Glow Effects */
+.card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(var(--accent-rgb), 0.15), transparent 40%);
+}
+
+.experience-card:hover .card-glow {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .experience-card {
+        width: 85%;
+    }
+
+    .timeline-line,
+    .timeline-dot,
+    .timeline-pulse {
+        left: 0;
+        transform: none;
+    }
+
+    .experience-item-wrapper {
+        justify-content: flex-end !important;
+        padding-left: 20px;
+    }
+
+    .experience-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-section {
+        padding: 4rem 5%;
+    }
+
+    .company-logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experience-role {
+        font-size: 1.2rem;
+    }
+}

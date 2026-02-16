@@ -13,12 +13,12 @@ const About: React.FC = () => {
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>About Me</h2>
                 <div style={{ lineHeight: '1.8', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
                     <p style={{ marginBottom: '1.5rem' }}>
-                        I'm a Senior Software Engineer with a passion for architecting and building high-availability, cloud-native systems.
-                        With 5 years of hands-on experience, I specialize in engineering resilient microservices, optimizing application performance,
+                        A Lead Software Engineer with a passion for architecting and building high-available cloud-native systems.
+                        I specialize in architecting resilient microservices, optimizing application performance,
                         and integrating AI-driven solutions to solve complex, real-world problems.
                     </p>
                     <p style={{ marginBottom: '1.5rem' }}>
-                        My core focus is on creating software that is not just functional, but also scalable, efficient, and maintainable.
+                        My core focus is on creating and upgrading software that is highly scalable, efficient, maintainable and cloud native.
                     </p>
                     <h3 style={{ fontSize: '1.5rem', marginTop: '2.5rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>Current Focus</h3>
                     <p>
