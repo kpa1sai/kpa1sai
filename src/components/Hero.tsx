@@ -6,10 +6,10 @@ import ProjectGrid from './ProjectGrid';
 
 const Hero: React.FC = () => {
     const roles = [
-        "Cloud Architect",
-        "Backend Engineer",
-        "DevOps Specialist",
-        "AI/ML Enthusiast"
+        "DevOps Engineer",
+        "Site Reliability Engineer",
+        "MLOps Engineer",
+        "Cloud Infrastructure Architect"
     ];
 
     return (
@@ -30,8 +30,8 @@ const Hero: React.FC = () => {
                         I am a <TypingText texts={roles} />
                     </h3>
                     <p style={{ marginTop: '3rem', lineHeight: '1.6', color: '#d1d1d1' }}>
-                        Specializing in building resilient microservices, optimizing performance,
-                        and integrating AI solutions.
+                        5 years of experience automating cloud-native infrastructure, CI/CD,
+                        and ML platforms on AWS, Azure &amp; GCP — keeping production reliable at 99.9%+ uptime.
                     </p>
                 </div>
             </motion.div>

@@ -22,64 +22,54 @@ const experienceData: ExperienceItem[] = [
     {
         id: 1,
         company: "Cigna Healthcare",
-        role: "Lead Software Engineer",
+        role: "Senior DevOps/MLOps Engineer",
         duration: "July 2025 - Present",
         logo: logo1,
         accomplishments: [
-            "Led, mentored, and managed a 7-member cloud engineering team, overseeing all scrum ceremonies, project backlogs, and execution.",
-            "Architected and deployed a stateful, event-driven backend system on AWS using Python (FastAPI) and Celery to orchestrate complex, multi-step workflows with built-in retries and timeouts.",
-            "Engineered a high-availability authentication service using Python-based Lambda Authorizers, implementing secure token refresh mechanisms and strict least-privilege access controls for compliance.",
-            "Developed a serverless Node.js application on AWS to achieve scalability and reduce operational overhead.",
-            "Optimized application performance through code refactoring and containerizing Node.js applications for deployment on AWS ECS.",
-            "Devised and implemented token refresh mechanisms using Node.js, Lambda, EventBridge, and AWS Parameter Store for secure, scheduled credential rotation.",
-            "Authored and scaled reusable Terraform modules adopted by 10+ teams, enabling standardized, secure provisioning of 50+ resources across a multi-account AWS environment.",
-            "Engineered a high-availability, secure AWS-native application stack using ECS Fargate, API Gateway, ALB/NLB, and DocumentDB to support core business functions.",
-            "Developed core Java microservices using Spring Boot and REST for data computation and storage, implementing AWS-native security practices with KMS, Secrets Manager, and ACM.",
-            "Spearheaded production release cycles including technical documentation, resource tagging, and execution of Gameday operations to ensure platform resilience."
+            "Designed and implemented end-to-end MLOps pipelines using Kubeflow and AWS SageMaker, enabling automated model training, tuning, validation, and deployment; reduced fraud model release cycles from two weeks to under six hours.",
+            "Built CI/CD pipelines with Jenkins and GitLab to support scheduled retraining of TensorFlow and PyTorch models, incorporating data validation, regression testing, and version control across environments.",
+            "Improved incident response by integrating LLM-based log summarization with monitoring tools, delivering clear alert insights to Slack and reducing time to diagnose issues by ~35%.",
+            "Deployed containerized ML inference services on AWS EKS using Docker and Helm, with autoscaling and fault-tolerance configurations maintaining over 99.9% uptime for real-time scoring systems.",
+            "Implemented MLflow for experiment tracking and model lifecycle management, standardizing model versioning and audit trails to support compliance.",
+            "Modernized data pipelines by transitioning legacy ETL to AWS Lambda and Step Functions, processing over 10M records monthly and cutting data latency from 12 hours to under 2 hours.",
+            "Developed Terraform modules to provision cloud infrastructure, ensuring consistent environments across development, staging, and production while minimizing configuration drift.",
+            "Established monitoring and alerting with Prometheus and Grafana, and enabled automated rollback via ArgoCD to recover quickly from deployment issues.",
+            "Strengthened data security and compliance with encryption, role-based access controls, and private networking, ensuring adherence to healthcare (HIPAA) data protection standards."
         ]
     },
     {
         id: 2,
         company: "Saint Louis University",
-        role: "Senior Backend Engineer",
+        role: "DevOps Engineer",
         duration: "November 2023 - May 2025",
         logo: logo2,
         accomplishments: [
-            "Developed AWS Lambda functions using Python and Java to store audio streaming data into S3 for downstream processing.",
-            "Created reusable frontend widgets using Node and Angular to be shared across multiple teams.",
-            "Led the design and implementation of highly scalable Node.js microservices, improving system performance by 30%.",
-            "Implemented backend integrations for frontend widgets, including lazy loading and pagination features.",
-            "Spearheaded migration of legacy systems to a modern Node.js-based architecture, improving quality and maintainability.",
-            "Implemented comprehensive testing strategies with Jest, including unit, integration, and end-to-end tests.",
-            "Integrated frontend and backend services to deliver a seamless experience for business users consuming existing APIs.",
-            "Led a team of 5 to develop custom data transformers serving multiple dashboards across the enterprise.",
-            "Engineered a resilient, event-driven integration platform between the TDX enterprise system and AWS by deploying multiple connectors to automate workflows and improve scalability.",
-            "Designed and implemented automated ETL data pipelines from TDX to AWS S3 buckets to support analytics workloads.",
-            "Engineered high-availability backend services that improved user experience, achieving over 90% positive feedback from end users.",
-            "Implemented the Observer pattern to make an existing application event-driven and built a Java application to process streaming data.",
-            "Established a data validation framework using Kafka, Snowflake, and QuerySurge to ensure high data integrity between Postgres databases and the TDX integration platform.",
-            "Devised and evaluated implementation strategies for AI-based analytics in AWS Connect, including cost-benefit analysis for high-performance data processing capabilities."
+            "Built and managed Jenkins CI/CD pipelines for Python and Java applications, integrating parallel testing, SonarQube analysis, and automated deployments, reducing release time by 55%.",
+            "Migrated legacy on-premise applications to Google Kubernetes Engine (GKE), implementing horizontal pod autoscaling and Ingress-based load balancing to handle peak academic workloads.",
+            "Developed and managed Kubeflow Pipelines for multiple ML experiments, automating data preprocessing, model training, evaluation, and artifact versioning for reproducible research workflows.",
+            "Created an internal chatbot using the Anthropic API to assist developers with pipeline failures and Kubernetes events by querying live cluster logs, reducing first-level support requests.",
+            "Automated Cloud SQL backup and recovery using Python, including snapshot scheduling and cross-region replication, significantly reducing recovery time for critical incidents.",
+            "Implemented GitOps workflows using ArgoCD and Kustomize to manage multi-environment deployments, reducing manual drift across development, QA, and production clusters.",
+            "Designed Apache Airflow pipelines to ingest IoT and research datasets into BigQuery with validation and incremental load logic for near real-time data availability.",
+            "Containerized microservices with Docker and managed deployments with Helm, enabling rolling updates and zero-downtime releases on the LMS platform.",
+            "Strengthened cluster security with RBAC policies and network isolation in GKE, and built Grafana dashboards to improve visibility and reduce issue resolution time."
         ]
     },
     {
         id: 3,
         company: "Capgemini Technology Services",
-        role: "Senior Software Engineer",
+        role: "DevOps Engineer",
         duration: "August 2021 - July 2023",
         logo: logo3,
         accomplishments: [
-            "Led migration of legacy Java/SOAP components to a modern microservices architecture on AWS, improving scalability and maintainability.",
-            "Developed an in-house mailbox application using Java, Spring Boot, Spring Data JPA, Hibernate, Maven, and Postgres.",
-            "Performed non-functional requirements (NFR) testing in line with company performance and reliability policies.",
-            "Built Infrastructure as Code solutions using Terraform to create secure, modular AWS infrastructure.",
-            "Integrated secure internet practices using Parameter Store, KMS, and custom Lambda Authorizers.",
-            "Implemented one-time data migration from on-prem Oracle to DynamoDB using DMS and Glue with Aurora RDS as a staging area.",
-            "Maintained a hybrid application state supporting both on-prem and cloud environments.",
-            "Championed containerization by designing, deploying, and managing highly available application environments on ECS Fargate.",
-            "Architected a scalable, serverless, event-driven application using Lambda, boosting performance and responsiveness by 10% while reducing operational overhead.",
-            "Developed and maintained infrastructure using Azure Resource Manager and Azure Pipelines with industry-standard templates to enhance efficiency and security.",
-            "Saved approximately 25% in application costs by re-architecting a monolithic application into serverless Azure Functions and Azure Container Apps.",
-            "Mentored interns on development best practices, testing strategies, and professional ethics."
+            "Designed and deployed cloud infrastructure using Terraform, provisioning AWS VPCs, EC2, RDS, and S3 across development, QA, and production, reducing manual setup time by over 60%.",
+            "Developed Jenkins CI/CD pipelines for 50+ microservices with unit, integration, and automated smoke tests, reducing production rollback incidents by 40%.",
+            "Containerized all microservices using Docker and deployed them on AWS ECS, ensuring 99.9% uptime for POS systems supporting 500+ retail outlets nationwide.",
+            "Implemented Kubernetes orchestration with Helm charts, enabling blue-green deployments, horizontal pod autoscaling, and environment-specific configurations.",
+            "Integrated SonarQube static analysis and Nexus artifact management into CI pipelines, improving code quality and deployment success rates by 25%.",
+            "Developed custom Bash scripts to automate rollback and service recovery, reducing production downtime from 2 hours to less than 20 minutes during incidents.",
+            "Configured centralized logging and monitoring with the ELK Stack, AWS CloudWatch, and SNS alerts for rapid identification of application and infrastructure issues.",
+            "Optimized microservices communication with Istio service mesh, reducing inter-service latency by 15% under peak load, and automated multi-region deployments to sustain 99.95% availability during high-traffic retail events."
         ]
     },
     {
@@ -89,11 +79,11 @@ const experienceData: ExperienceItem[] = [
         duration: "March 2021 - July 2021",
         logo: logo4,
         accomplishments: [
-            "Developed an algorithm to enable resource-consumption-based instrumentation for Java applications across the organization.",
-            "Designed and engineered a workflow to identify inefficient applications based on health and performance metrics.",
-            "Architected Java agents for real-time performance monitoring and alerting for 50+ clients.",
-            "Optimized multiple endpoints by identifying bottlenecks and rewriting SQL queries.",
-            "Refactored the Java codebase using Java Streams to improve performance and readability."
+            "Developed a resource-consumption-based instrumentation algorithm in Java to identify high CPU and memory usage patterns across enterprise applications, improving monitoring efficiency by 30%.",
+            "Designed a workflow to detect underperforming applications using health metrics and performance KPIs, enabling proactive optimization of 50+ enterprise client applications.",
+            "Architected Java agents for real-time performance monitoring and alerting, reducing incident detection time from hours to minutes across multiple production environments.",
+            "Optimized critical endpoints by profiling SQL queries and refactoring inefficient database interactions, achieving up to 25% faster data retrieval.",
+            "Refactored legacy code using Java Streams and modern Java constructs, improving readability and performance without affecting production stability."
         ]
     },
     {
@@ -103,12 +93,11 @@ const experienceData: ExperienceItem[] = [
         duration: "December 2020 - March 2021",
         logo: logo5,
         accomplishments: [
-            "Created multiple REST endpoints using Spring MVC with Spring Boot, Data JPA, Maven, Hibernate, and Swagger.",
-            "Developed TDD/BDD-based test cases to maintain over 85% SonarQube coverage.",
-            "Provided production support by resolving 30+ ServiceNow tickets.",
-            "Implemented and utilized React components to build 2 customer-facing pages.",
-            "Fixed 50+ bugs and security issues and performed version upgrades.",
-            "Performed manual and Jenkins-based deployments on IBM WebSphere and JBoss."
+            "Developed RESTful APIs using Spring Boot, Spring MVC, Spring Data JPA, Hibernate, and Maven, documented with Swagger for seamless front-end integration.",
+            "Designed unit and integration tests following TDD/BDD practices, achieving SonarQube code coverage above 85%.",
+            "Provided production support by resolving 30+ ServiceNow tickets covering critical bugs, configuration issues, and performance bottlenecks.",
+            "Built and integrated React components delivering 2 customer-facing pages, reducing front-end development time by 20%.",
+            "Executed manual and automated Jenkins deployments on IBM WebSphere and JBoss servers, including version upgrades and patching with zero downtime."
         ]
     }
 ]

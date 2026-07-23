@@ -19,7 +19,8 @@ const Contact: React.FC = () => {
             >
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Get In Touch</h2>
                 <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem auto' }}>
-                    I'm always open to connecting with fellow engineers and exploring new opportunities.
+                    Open to DevOps, SRE, and MLOps opportunities — let's talk about building reliable,
+                    automated platforms together.
                 </p>
 
                 <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>

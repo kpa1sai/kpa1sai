@@ -10,24 +10,24 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "High-Throughput Systems",
-        description: "Node.js microservices handling 10k+ requests/sec.",
-        tech: ["Node.js", "Microservices", "Optimization"]
+        title: "MLOps Release Automation",
+        description: "Cut ML release cycles from 2 weeks to under 6 hours.",
+        tech: ["Kubeflow", "SageMaker", "MLflow"]
     },
     {
-        title: "API Latency Reduction",
-        description: "Reduced API latency by 45% via caching & optimization.",
-        tech: ["Performance", "Caching", "Backend"]
+        title: "GitOps at Scale",
+        description: "Multi-env deployments with automated rollback via ArgoCD.",
+        tech: ["ArgoCD", "Kubernetes", "Helm"]
     },
     {
-        title: "Serverless Migration",
-        description: "Saved 25% costs by re-architecting to serverless.",
-        tech: ["AWS Lambda", "Cost Reduction", "Serverless"]
+        title: "AI-Assisted Incident Response",
+        description: "LLM log summarization cut diagnosis time by 35%.",
+        tech: ["LLMs", "Prometheus", "Grafana"]
     },
     {
-        title: "Scalable IaC Modules",
-        description: "Terraform modules adopted by 10+ teams.",
-        tech: ["Terraform", "DevOps", "Automation"]
+        title: "Infrastructure as Code",
+        description: "Terraform provisioning cut manual setup time by 60%.",
+        tech: ["Terraform", "AWS", "GCP"]
     }
 ];
 

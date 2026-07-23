@@ -5,20 +5,36 @@ import { motion } from 'framer-motion';
 
 const techCategories = [
     {
-        name: "Languages",
-        skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL"]
+        name: "Cloud Platforms",
+        skills: ["AWS (EKS, Lambda, SageMaker)", "Azure (AKS, DevOps)", "GCP (GKE, BigQuery)"]
     },
     {
-        name: "Frameworks",
-        skills: ["Spring Boot", "Node.js", "React", "Angular", "Jest"]
+        name: "Containers & Orchestration",
+        skills: ["Docker", "Kubernetes", "Helm", "Kustomize", "Istio Service Mesh"]
     },
     {
-        name: "Cloud (AWS)",
-        skills: ["Lambda", "ECS", "S3", "DynamoDB", "Aurora RDS", "API Gateway"]
+        name: "CI/CD & GitOps",
+        skills: ["Jenkins", "GitHub Actions", "GitLab CI/CD", "Azure Pipelines", "ArgoCD"]
     },
     {
-        name: "DevOps",
-        skills: ["Terraform", "Docker", "Kubernetes", "CI/CD", "Jenkins"]
+        name: "Infrastructure as Code",
+        skills: ["Terraform", "CloudFormation", "ARM Templates"]
+    },
+    {
+        name: "MLOps & ML Lifecycle",
+        skills: ["Kubeflow", "MLflow", "SageMaker Pipelines", "Model Registry", "Drift Monitoring"]
+    },
+    {
+        name: "Observability & Reliability",
+        skills: ["Prometheus", "Grafana", "ELK Stack", "CloudWatch", "Distributed Tracing"]
+    },
+    {
+        name: "Data & Workflow Orchestration",
+        skills: ["Apache Airflow", "Step Functions", "ETL Automation", "Event-Driven Architecture"]
+    },
+    {
+        name: "Languages & Security",
+        skills: ["Python", "Java", "Bash", "SQL", "IAM / RBAC", "HIPAA Compliance"]
     }
 ];
 
