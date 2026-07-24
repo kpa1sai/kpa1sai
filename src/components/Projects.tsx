@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
     return (
         <section style={{ padding: '4rem 10%', position: 'relative', zIndex: 10 }} id="projects">
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center' }}>Projects</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', maxWidth: '1100px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem', maxWidth: '1100px', margin: '0 auto' }}>
                 {projectsData.map((project, index) => (
                     <motion.div
                         key={index}

@@ -42,7 +42,7 @@ const TechStack: React.FC = () => {
     return (
         <section style={{ padding: '4rem 10%', position: 'relative', zIndex: 10 }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center' }}>Tech Stack</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(250px, 100%), 1fr))', gap: '2rem' }}>
                 {techCategories.map((category, index) => (
                     <motion.div
                         key={index}
