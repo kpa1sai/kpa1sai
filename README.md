@@ -95,12 +95,6 @@ DevOps/MLOps Engineer with 5 years of experience automating cloud-native infrast
 
 ---
 
-## 📈 GitHub Stats
-
-![Pavan's GitHub stats](https://github-readme-stats.vercel.app/api?username=kpa1sai&show_icons=true&theme=github_dark&hide_border=true)
-
----
-
 ## 📫 Reach Me
 
 I'm always open to talking DevOps, SRE, and MLOps — or exploring new opportunities.
