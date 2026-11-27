@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import '../styles/Experience.css';
 
+import logo0 from '../assets/logo_0.png';
 import logo1 from '../assets/logo_1.png';
 import logo2 from '../assets/logo_2.png';
 import logo3 from '../assets/logo_3.png';
@@ -14,16 +15,30 @@ interface ExperienceItem {
     company: string;
     role: string;
     duration: string;
-    logo: string;
+    logo?: string;
     accomplishments: string[];
 }
 
 const experienceData: ExperienceItem[] = [
     {
+        id: 0,
+        company: "Contoro Robotics",
+        role: "DevOps Engineer III",
+        duration: "October 2026 - Present",
+        logo: logo0,
+        accomplishments: [
+            "Leading the migration of the production platform from on-prem to AWS, covering 13 services (including GPU-backed EC2 workloads) and ~5 TB across 2 databases, with all infrastructure provisioned in Terraform; designed a hard-cutover plan, with an nginx reverse-proxy bridge and a Route 53 switchover, to avoid split-brain writes.",
+            "Migrated authentication for the entire fleet of 30+ robots from long-lived static AWS access keys to IAM Roles Anywhere short-lived credentials with zero downtime, by writing a migration script and rolling it out robot by robot.",
+            "Designing identity-based network access for ~40 users and 70-80 devices and robots across 8 teams, replacing shared team logins with SAML SSO and deny-by-default Tailscale ACLs so access is administered centrally through the identity provider.",
+            "Resolved DNS and MQTT connectivity failures on 30+ robots by tracing them to duplicate Tailscale installs and NetworkManager conflicts, then fixing it at the source by making Tailscale unmanaged in the robot install script.",
+            "Hardened release integrity for the services monorepo with GitHub tag rulesets that restrict release tags to the default branch, and brought ECR under Terraform without destroying existing manually pushed images."
+        ]
+    },
+    {
         id: 1,
         company: "Cigna Healthcare",
         role: "Senior DevOps/MLOps Engineer",
-        duration: "July 2025 - Present",
+        duration: "July 2025 - September 2026",
         logo: logo1,
         accomplishments: [
             "Designed and implemented end-to-end MLOps pipelines using Kubeflow and AWS SageMaker, enabling automated model training, tuning, validation, and deployment; reduced fraud model release cycles from two weeks to under six hours.",
@@ -140,7 +155,13 @@ const ExperienceCard: React.FC<{ item: ExperienceItem; index: number }> = ({ ite
                 <div className="card-glow" />
 
                 <div className="experience-header">
-                    <img src={item.logo} alt={item.company} className="company-logo-img" />
+                    {item.logo ? (
+                        <img src={item.logo} alt={item.company} className="company-logo-img" />
+                    ) : (
+                        <div className="company-logo-img company-logo-fallback" role="img" aria-label={item.company}>
+                            {item.company.charAt(0)}
+                        </div>
+                    )}
                     <div className="experience-info">
                         <h3 className="experience-role">{item.role}</h3>
                         <p className="experience-company">{item.company}</p>
